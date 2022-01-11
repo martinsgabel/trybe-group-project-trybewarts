@@ -1,0 +1,81 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+
+}
+
+/*Configurando o header, ainda não responsivo (requisitos 1, 2, 3 e 4) */
+.trybewarts-header-logo {
+   height:  60px
+}
+
+#trybewarts-header-title {
+    color: white;
+}
+
+header {
+    background-color: rgb(50, 167, 145);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.trybewarts-login {
+    display: flex;
+}
+/*Terminei de configurar Header aqui*/
+
+/*Configurando main pra que ele não fique escondido atrás do cabeçalho*/
+main {
+    margin-top: 50px;
+}
+
+/*Requisitos 5 ao 7 */
+main {
+    display: flex;
+    justify-content: space-around;
+}
+#evaluation-form{
+    width: 675px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+#evaluation-form h1{
+    text-align: center;
+}
+
+#trybewarts-forms-logo {
+    height: 500px;
+} 
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+}
+/*Requisitos 12 ao ? */
+#radios {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#checkboxs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.check {
+    margin: 0 10px;
+}
+#caixinhas {
+    display: flex;
+    flex-wrap: wrap;
+}
