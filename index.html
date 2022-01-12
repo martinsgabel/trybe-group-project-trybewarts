@@ -40,7 +40,7 @@
                 </select>
           </fieldset>
 
-<!---Requisitos 12 ao ? -->
+<!---Requisitos 12 e 13 -->
           <fieldset id="flex-container">
             <div id="radios">
             <label id="label-family" for="family">Qual sua família?</label>
@@ -53,8 +53,11 @@
                   <input id="3" type="radio" name="family" value="FullStack">FullStack</label>
               </div>
 
+<!---Criei a div "checkboxs" pra poder organiza-la ao lado da div "radios", de forma que a pergunta "Qual conteúdo você está com mais vontade de aprender?" aparecesse no topo do container e ao lado direito da pergunta "Qual sua família?"-->
               <div id="checkboxs">
                 <label id="label-content" for="family">Qual conteúdo você está com mais vontade de aprender?</label>
+
+<!---Aqui eu crio outra div com o id "caixinhas" porque, diferente da div "checkboxs" que está organizada em "flex-direction: column;", o campo dos checkboxs eu quero que se organizem em "flex-direction: row;"-->
                 <div id="caixinhas">
                     <label class="check" for="HoFs">
                     <input id="HoFs" type="checkbox" value="HoFs">HoFs</label>
@@ -73,10 +76,47 @@
 
 
           </fieldset>
+<!---Requisitos 14-->
+          <fieldset>
+<!---Criei a div "flex-row" para posiciona-la ao lado dos inputs radios, como requerido no requisito 14. E adicionei a classe "rates" nos inputs para adicionar margin de 10px em cada um deles, pra que não ficassem coladinhos-->
+              <div id="flex-row">
+              <label id="label-rate">Como você avalia a Trybewarts?</label>
+              <div id="opções">
+             <label class="rates" for="nt1"> <input  name="rate" id="nt1" value="1" type="radio">1</label>
+             <label class="rates" for="nt2"> <input  name="rate" id="nt2" value="2" type="radio">2</label>
+             <label class="rates" for="nt3"> <input  name="rate" id="nt3" value="3" type="radio">3</label>
+             <label class="rates" for="nt4"> <input  name="rate" id="nt4" value="4" type="radio">4</label>
+             <label class="rates" for="nt5"> <input  name="rate" id="nt5" value="5" type="radio">5</label>
+             <label class="rates" for="nt6"> <input  name="rate" id="nt6" value="6" type="radio">6</label>
+             <label class="rates" for="nt7"> <input  name="rate" id="nt7" value="7" type="radio">7</label>
+             <label class="rates" for="nt8"> <input  name="rate" id="nt8" value="8" type="radio">8</label>
+             <label class="rates" for="nt9"> <input  name="rate" id="nt9" value="9" type="radio">9</label>
+             <label class="rates" for="nt10"> <input name="rate" id="nt10" value="10"  type="radio">10</label>
+            </div>
+            </div>
+
+<!---Requisitos 15 ao 17-->
+<br>
+         <div id="comentario">
+            <label class="textarea" for="textArea">Deixe seu comentário:</label>
+            <textarea name="comment" id="textArea" cols="30" rows="10" maxlength="500"></textarea>
+            <br>
+
+            <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?
+            <input type="checkbox" id="agreement"></label>
+         </div>
+         <button id="submit-btn" type="submit">Enviar</button>
+          </fieldset>
+
+         
         </form>
         <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">
      </main>
-
+<!---Requisitos 19-->
+     <footer>
+    <p>Direitos reservados à Trybewarts©</p>
+    </footer>
+    
 
     
 <script src="script.js"></script>

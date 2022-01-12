@@ -1,81 +1,126 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-
+  margin: 0;
+  padding: 0;
 }
 
-/*Configurando o header, ainda não responsivo (requisitos 1, 2, 3 e 4) */
+/* Configurando o header, ainda não responsivo (requisitos 1, 2, 3 e 4) */
 .trybewarts-header-logo {
-   height:  60px
+  height: 60px;
 }
 
 #trybewarts-header-title {
-    color: white;
+  color: white;
 }
 
 header {
-    background-color: rgb(50, 167, 145);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
+  background-color: rgb(50, 167, 145);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .trybewarts-login {
-    display: flex;
-}
-/*Terminei de configurar Header aqui*/
-
-/*Configurando main pra que ele não fique escondido atrás do cabeçalho*/
-main {
-    margin-top: 50px;
+  display: flex;
 }
 
-/*Requisitos 5 ao 7 */
+/* Terminei de configurar Header aqui */
+
+/* Na linha 37, configuro main pra que ele não fique escondido atrás do cabeçalho */
 main {
-    display: flex;
-    justify-content: space-around;
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-around;
 }
-#evaluation-form{
-    width: 675px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    box-sizing: border-box;
+
+/* Requisitos 5 ao 7 */
+#evaluation-form {
+  width: 675px;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  box-sizing: border-box;
 }
-#evaluation-form h1{
-    text-align: center;
+
+#evaluation-form h1 {
+  text-align: center;
 }
 
 #trybewarts-forms-logo {
-    height: 500px;
-} 
+  height: 500px;
+}
 
 #flex-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-/*Requisitos 12 ao ? */
+
+/* Requisitos 12 ao 16 */
+
+/* Deixei umas explicaçõesinhas em comentário no html,
+começando no campo da "div id="checkboxs",
+caso as minhas intenções com os códigos abaixo não estejam claras */
+
 #radios {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
+
 #checkboxs {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
+
 .check {
-    margin: 0 10px;
+  margin: 0 10px;
 }
+
 #caixinhas {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#label-rate {
+  margin-right: 20px;
+}
+
+#flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.rates {
+  margin: 0 5px;
+}
+
+#comentario {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Requisitos 19 */
+footer {
+
+  /* Configurando a aparência do rodapé */
+  height: 50px;
+  background-color: rgba(48, 48, 48, 0.616);
+
+  /* Configurando o texto do rodapé */
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  white-space: pre-line;
+
+  /* Configurando o comportamento do rodapé */
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
