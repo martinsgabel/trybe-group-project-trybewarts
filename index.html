@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>TrybeWarts School</title>
+    <title>TrybeWarts School</title> 
 </head>
 <body>
 <!---Requisitos 1 ao 4 -->
@@ -26,13 +26,14 @@
 <!---Requisitos 5 ao 11 -->
      <main>
         <form action="#" id="evaluation-form">
-          <fieldset>
+          <fieldset class="containerA">
                 <h1>Formulário de Avaliação</h1>
                 <input id="input-name" type="text" name="name" placeholder="Nome">
                 <input id="input-lastname" type="text" name="lastdName" placeholder="Sobrenome">
                 <br>
                 <input id="input-email" type="email" name="email" placeholder="Email">
-                Casa:<select name="casa" id="house">
+                <label for="house" class="select">Casa:</label>
+                <select name="casa" id="house">
                     <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                     <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
                     <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -41,7 +42,7 @@
           </fieldset>
 
 <!---Requisitos 12 e 13 -->
-          <fieldset id="flex-container">
+          <fieldset id="flex-container" class="containerB">
             <div id="radios">
             <label id="label-family" for="family">Qual sua família?</label>
 

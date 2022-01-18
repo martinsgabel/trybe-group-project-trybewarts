@@ -1,11 +1,16 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; 
+  border: 0;
 }
 
-/* Configurando o header, ainda não responsivo (requisitos 1, 2, 3 e 4) */
+
+body {
+  background-color: #dee6e4;
+}
+
 .trybewarts-header-logo {
-  height: 60px;
+  height: 50px;
 }
 
 #trybewarts-header-title {
@@ -14,6 +19,7 @@
 
 header {
   background-color: rgb(50, 167, 145);
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 0;
   left: 0;
@@ -22,17 +28,37 @@ header {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  padding: 15px 30px;
 }
 
 .trybewarts-login {
+  height: 40px;
   display: flex;
+}
+
+#email #password {
+  padding: 0 5px;
+  border-right: 1px solid rgb(50, 167, 145);
+}
+
+.trybewarts-login button {
+  padding: 0 20px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(186, 226, 219);
+  color: #343a40;
+}
+
+.trybewarts-login button:hover {
+  transition: 1s;
+  background-color: rgb(26, 90, 78);
+  color: #fff;
 }
 
 /* Terminei de configurar Header aqui */
 
 /* Na linha 37, configuro main pra que ele não fique escondido atrás do cabeçalho */
 main {
-  margin: 100px 0;
+  margin: 120px 80px;
   display: flex;
   justify-content: space-around;
 }
@@ -48,6 +74,7 @@ main {
 
 #evaluation-form h1 {
   text-align: center;
+  margin-bottom: 15px;
 }
 
 #trybewarts-forms-logo {
@@ -59,16 +86,52 @@ main {
   flex-direction: row;
 }
 
+.containerA {
+  margin-bottom: 15px;
+}
+
+.containerA input {
+  width: 300px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ced6d4;
+}
+
+.containerA select {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ced6d4;
+  color: rgb(117, 117, 117);
+  width: 270px;
+}
+
+.containerA .select {
+  text-decoration: underline overline rgb(50, 167, 145) 2px;
+}
 /* Requisitos 12 ao 16 */
 
 /* Deixei umas explicaçõesinhas em comentário no html,
 começando no campo da "div id="checkboxs",
 caso as minhas intenções com os códigos abaixo não estejam claras */
 
+.containerB {
+  margin-bottom: 15px;
+}
+
+#label-family {
+  text-decoration: underline overline rgb(50, 167, 145) 2px;
+  padding: 5px 0;
+}
+
 #radios {
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+
+#label-content {
+  text-decoration: underline overline rgb(50, 167, 145) 2px;
+  padding: 5px 0;
 }
 
 #checkboxs {
@@ -87,6 +150,10 @@ caso as minhas intenções com os códigos abaixo não estejam claras */
 }
 
 #label-rate {
+  text-decoration: underline overline rgb(50, 167, 145) 2px;
+}
+
+#label-rate {
   margin-right: 20px;
 }
 
@@ -99,28 +166,46 @@ caso as minhas intenções com os códigos abaixo não estejam claras */
   margin: 0 5px;
 }
 
+.textarea {
+  text-decoration: underline overline rgb(50, 167, 145) 2px;
+  padding: 5px 0;
+}
+
+textarea {
+  padding: 8px;
+  border: 1px solid #ced6d4;
+}
+
 #comentario {
   display: flex;
   flex-direction: column;
 }
 
+#label-infos {
+  text-decoration: underline overline rgb(50, 167, 145) 2px;
+}
+
+#submit-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: 1px solid #fff;
+    background-color: rgb(50, 167, 145);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+#submit-btn:hover {
+  transition: 1s;
+  background-color: rgb(26, 90, 78);
+}
+
 /* Requisitos 19 */
 footer {
-
-  /* Configurando a aparência do rodapé */
-  height: 50px;
-  background-color: rgba(48, 48, 48, 0.616);
-
-  /* Configurando o texto do rodapé */
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
+  background-color: rgb(50, 167, 145);
+  padding: 10px 0;
   text-align: center;
-  white-space: pre-line;
-
-  /* Configurando o comportamento do rodapé */
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  color: #fff;
 }
