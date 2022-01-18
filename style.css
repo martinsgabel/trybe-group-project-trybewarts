@@ -6,7 +6,7 @@
 
 
 body {
-  background-color: #dee6e4;
+  background-color: rgb(222, 230, 228);
 }
 
 .trybewarts-header-logo {
@@ -19,7 +19,7 @@ body {
 
 header {
   background-color: rgb(50, 167, 145);
-  color: rgb(255, 255, 255);
+  color: white;
   position: absolute;
   top: 0;
   left: 0;
@@ -43,27 +43,23 @@ header {
 
 .trybewarts-login button {
   padding: 0 20px;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid white;
   background-color: rgb(186, 226, 219);
-  color: #343a40;
+  color: rgb(52, 58, 64);
 }
 
 .trybewarts-login button:hover {
   transition: 1s;
   background-color: rgb(26, 90, 78);
-  color: #fff;
+  color: white;
 }
 
-/* Terminei de configurar Header aqui */
-
-/* Na linha 37, configuro main pra que ele não fique escondido atrás do cabeçalho */
 main {
   margin: 120px 80px;
   display: flex;
   justify-content: space-around;
 }
 
-/* Requisitos 5 ao 7 */
 #evaluation-form {
   width: 675px;
   display: flex;
@@ -94,13 +90,13 @@ main {
   width: 300px;
   padding: 10px;
   margin: 5px 0;
-  border: 1px solid #ced6d4;
+  border: 1px solid rgb(206, 214, 212);
 }
 
 .containerA select {
   padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ced6d4;
+  background-color: white;
+  border: 1px solid rgb(206, 214, 212);
   color: rgb(117, 117, 117);
   width: 270px;
 }
@@ -108,11 +104,6 @@ main {
 .containerA .select {
   text-decoration: underline overline rgb(50, 167, 145) 2px;
 }
-/* Requisitos 12 ao 16 */
-
-/* Deixei umas explicaçõesinhas em comentário no html,
-começando no campo da "div id="checkboxs",
-caso as minhas intenções com os códigos abaixo não estejam claras */
 
 .containerB {
   margin-bottom: 15px;
@@ -151,9 +142,6 @@ caso as minhas intenções com os códigos abaixo não estejam claras */
 
 #label-rate {
   text-decoration: underline overline rgb(50, 167, 145) 2px;
-}
-
-#label-rate {
   margin-right: 20px;
 }
 
@@ -173,7 +161,7 @@ caso as minhas intenções com os códigos abaixo não estejam claras */
 
 textarea {
   padding: 8px;
-  border: 1px solid #ced6d4;
+  border: 1px solid rgb(206, 214, 212);
 }
 
 #comentario {
@@ -186,15 +174,15 @@ textarea {
 }
 
 #submit-btn {
-    width: 100%;
-    margin-top: 15px;
-    padding: 12px;
-    border: 1px solid #fff;
-    background-color: rgb(50, 167, 145);
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: lowercase;
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border: 1px solid white;
+  background-color: rgb(50, 167, 145);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: lowercase;
 }
 
 #submit-btn:hover {
@@ -202,10 +190,9 @@ textarea {
   background-color: rgb(26, 90, 78);
 }
 
-/* Requisitos 19 */
 footer {
   background-color: rgb(50, 167, 145);
   padding: 10px 0;
   text-align: center;
-  color: #fff;
+  color: white;
 }
