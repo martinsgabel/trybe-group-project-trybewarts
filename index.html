@@ -5,112 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Trybewarts</title>
+    <title>TrybeWarts School</title>
 </head>
 <body>
-    <header>
-        <img src="images/trybewarts-header-logo.svg" alt="logo" class="trybewarts-header-logo">
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <form action="GET" class="trybewarts-login">
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="password" id="" placeholder="Senha">
+<!---Requisitos 1 ao 4 -->
+    <header class="header">
+            <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo">
+
+            <h1 id="trybewarts-header-title">Trybewarts</h1>
+
+        <form class="trybewarts-login" id="email-password" action="#">
+
+            <input type="email"  placeholder="Email" name="email" id="email">
+            <input type="password"  placeholder="Senha" name="password" id="password">
+
             <button>Entrar</button>
         </form>
     </header>
 
-    <main>
-        <form action="GET" id="evaluation-form">
-
-            <div class="containerA">
-
-                <input type="text" name="name" id="input-name" placeholder="Nome">
-                <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
-                <input type="email" name="email" id="input-email" placeholder="Email">
-                <label for="house" class="select">Casa</label>
-                <select name="casa" id="house">
+<!---Requisitos 5 ao 11 -->
+     <main>
+        <form action="#" id="evaluation-form">
+          <fieldset>
+                <h1>Formulário de Avaliação</h1>
+                <input id="input-name" type="text" name="name" placeholder="Nome">
+                <input id="input-lastname" type="text" name="lastdName" placeholder="Sobrenome">
+                <br>
+                <input id="input-email" type="email" name="email" placeholder="Email">
+                Casa:<select name="casa" id="house">
                     <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                     <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                    <option value="Corvinode" id="corvinode-house
-                    ">Corvinode</option>
+                    <option value="Corvinode" id="corvinode-house">Corvinode</option>
                     <option value="Pytherina" id="pytherina-house">Pytherina</option>
                 </select>
+          </fieldset>
 
+<!---Requisitos 12 e 13 -->
+          <fieldset id="flex-container">
+            <div id="radios">
+            <label id="label-family" for="family">Qual sua família?</label>
+
+                  <label for="1">
+                  <input id="1" type="radio" name="family" value="Frontend">Frontend</label>
+                  <label for="2">
+                  <input id="2" type="radio" name="family" value="Backend">Backend</label>
+                  <label for="3">
+                  <input id="3" type="radio" name="family" value="FullStack">FullStack</label>
+              </div>
+
+<!---Criei a div "checkboxs" pra poder organiza-la ao lado da div "radios", de forma que a pergunta "Qual conteúdo você está com mais vontade de aprender?" aparecesse no topo do container e ao lado direito da pergunta "Qual sua família?"-->
+              <div id="checkboxs">
+                <label id="label-content" for="family">Qual conteúdo você está com mais vontade de aprender?</label>
+
+<!---Aqui eu crio outra div com o id "caixinhas" porque, diferente da div "checkboxs" que está organizada em "flex-direction: column;", o campo dos checkboxs eu quero que se organizem em "flex-direction: row;"-->
+                <div id="caixinhas">
+                    <label class="check" for="HoFs">
+                    <input id="HoFs" type="checkbox" value="HoFs">HoFs</label>
+                    <label class="check" for="Jest">
+                    <input id="Jest" type="checkbox" value="Jest">Jest</label>
+                    <label class="check" for="Promises">
+                    <input id="Promises" type="checkbox" value="Promises">Promises</label>
+                    <label class="check" for="React">
+                    <input id="React" type="checkbox" value="React">React</label>
+                    <label class="check" for="SQL">
+                    <input id="SQL" type="checkbox" value="SQL">SQL</label>
+                    <label class="check" for="Python">
+                    <input id="Python" type="checkbox" value="Python">Python</label>
+                </div>
+              </div>
+
+
+          </fieldset>
+<!---Requisitos 14-->
+          <fieldset>
+<!---Criei a div "flex-row" para posiciona-la ao lado dos inputs radios, como requerido no requisito 14. E adicionei a classe "rates" nos inputs para adicionar margin de 10px em cada um deles, pra que não ficassem coladinhos-->
+              <div id="flex-row">
+              <label id="label-rate">Como você avalia a Trybewarts?</label>
+              <div id="opções">
+             <label class="rates" for="nt1"> <input  name="rate" id="nt1" value="1" type="radio">1</label>
+             <label class="rates" for="nt2"> <input  name="rate" id="nt2" value="2" type="radio">2</label>
+             <label class="rates" for="nt3"> <input  name="rate" id="nt3" value="3" type="radio">3</label>
+             <label class="rates" for="nt4"> <input  name="rate" id="nt4" value="4" type="radio">4</label>
+             <label class="rates" for="nt5"> <input  name="rate" id="nt5" value="5" type="radio">5</label>
+             <label class="rates" for="nt6"> <input  name="rate" id="nt6" value="6" type="radio">6</label>
+             <label class="rates" for="nt7"> <input  name="rate" id="nt7" value="7" type="radio">7</label>
+             <label class="rates" for="nt8"> <input  name="rate" id="nt8" value="8" type="radio">8</label>
+             <label class="rates" for="nt9"> <input  name="rate" id="nt9" value="9" type="radio">9</label>
+             <label class="rates" for="nt10"> <input name="rate" id="nt10" value="10"  type="radio">10</label>
+            </div>
             </div>
 
-            <div class="containerB">
+<!---Requisitos 15 ao 17-->
+<br>
+         <div id="comentario">
+            <label class="textarea" for="textArea">Deixe seu comentário:</label>
+            <textarea name="comment" id="textArea" cols="30" rows="10" maxlength="500"></textarea>
+            <br>
 
-                <div class="trybe-family">
-                        <label for="family" id="label-family">Qual sua família?</label>
-                    <label for="Frontend">
-                        <input type="radio" name="family" value="Frontend" id="Frontend">Frontend
-                    </label>
-                    <label for="Backend">
-                        <input type="radio" name="family" value="Backend" id="Backend">Backend
-                    </label>
-                    <label for="FullStack">
-                        <input type="radio" name="family" value="FullStack" id="FullStack">FullStack
-                    </label>
-                </div>
+            <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?
+            <input type="checkbox" id="agreement"></label>
+         </div>
+         <button id="submit-btn" type="submit">Enviar</button>
+          </fieldset>
 
-                <div class="trybe-conteudo">
-                    <div class="label-contet-label">
-                        <label for="aprender" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-                    </div>
-
-                    <div class="label-content-options">
-                        <label for="HoFs"><input type="checkbox" name="HoFs" value="HoFs">HoFs</label>
-                        <label for="Jest"><input type="checkbox" name="Jest" value="Jest">Jest</label>
-                        <label for="Promises"><input type="checkbox" name="Promises" value="Promises">Promises</label>                    
-                        <label for="React"><input type="checkbox" name="React" value="React">React</label>
-                        <label for="SQL"><input type="checkbox" name="SQL" value="SQL">SQL</label>
-                        <label for="Python"><input type="checkbox" name="Python" value="Python">Python</label>
-                    </div>                    
-                </div>
-                                
-            </div>
-
-            <div class="containerC">
-                <div class="avaliador">
-                    <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
-
-                    <label for="n1"><input type="radio" name="rate" value="1" id="n1">1</label>
-                    <label for="2"><input type="radio" name="rate" value="2" id="n2">2</label>
-                    <label for="n3"><input type="radio" name="rate" value="3" id="n3">3</label>
-                    <label for="n4"><input type="radio" name="rate" value="4" id="n4">4</label>
-                    <label for="n5"><input type="radio" name="rate" value="5" id="n5">5</label>
-                    <label for="n6"><input type="radio" name="rate" value="6" id="n6">6</label>
-                    <label for="n7"><input type="radio" name="rate" value="7" id="n7">7</label>
-                    <label for="n8"><input type="radio" name="rate" value="8" id="n8">8</label>
-                    <label for="n9"><input type="radio" name="rate" value="9" id="n9">9</label>
-                    <label for="n10"><input type="radio" name="rate" value="10" id="n10">10</label>
-                </div>
-
-                <div class="textarea-box">
-                    <label for="textarea" class="textarea">Deixe seu comentário:</label>
-                    <textarea name="textarea" id="textarea" rows="5" maxlength="500"></textarea>
-                </div>
-
-                <div class="agreement-box">
-                    <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-                    <input type="checkbox" name="agreement" id="agreement" required>
-                </div>
-            </div>
-
-            <div class="button-box">
-                <button type="submit" id="submit-btn">Enviar</button>
-            </div>            
+         
         </form>
-    
-        <div id="trybewarts-forms-logo">
-            <img src="images/trybewarts-colored.svg" alt="image">
-        </div>
-    </main>
-
-    <footer>
-        <p>Direitos reservados à Trybewarts©</p>
+        <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">
+     </main>
+<!---Requisitos 19-->
+     <footer>
+    <p>Direitos reservados à Trybewarts©</p>
     </footer>
+    
 
-    <!-- JS -->
-    <script src="script.js"></script>
+    
+<script src="script.js"></script>
 </body>
 </html>

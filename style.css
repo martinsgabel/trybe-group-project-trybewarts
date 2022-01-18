@@ -1,210 +1,126 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-    background-color: #dee6e4;
+/* Configurando o header, ainda não responsivo (requisitos 1, 2, 3 e 4) */
+.trybewarts-header-logo {
+  height: 60px;
+}
+
+#trybewarts-header-title {
+  color: white;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    background-color: rgb(50, 167, 145);
-    padding: 15px 30px;
-}
-
-img {
-    height: 50px;
-    
+  background-color: rgb(50, 167, 145);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .trybewarts-login {
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: stretch;
+  display: flex;
 }
 
-h1 {
-    text-align: center;
-}
+/* Terminei de configurar Header aqui */
 
-.trybewarts-login input {
-    padding: 0 5px;
-    border-right: 1px solid rgb(50, 167, 145);
-}
-
-.trybewarts-login button {
-    padding: 0 20px;
-    border: 1px solid #fff;
-    background-color: rgb(186, 226, 219);
-    color: #343a40;
-}
-
-.trybewarts-login button:hover {
-    transition: 1s;
-    background-color: rgb(26, 90, 78);
-    color: #fff;
-}
-
+/* Na linha 37, configuro main pra que ele não fique escondido atrás do cabeçalho */
 main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-around;
 }
 
+/* Requisitos 5 ao 7 */
 #evaluation-form {
-    display: flex;
-    flex-direction: column;
-    width: 675px;
+  width: 675px;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
-.containerA {
-    display: flex;
-    flex-flow: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
+#evaluation-form h1 {
+  text-align: center;
 }
 
-.containerA input {
-    width: 300px;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ced6d4;
+#trybewarts-forms-logo {
+  height: 500px;
 }
 
-.containerA select {
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ced6d4;
-    color: rgb(117, 117, 117);
-    width: 270px;
+#flex-container {
+  display: flex;
+  flex-direction: row;
 }
 
-.containerA .select {
-    text-decoration: underline overline rgb(50, 167, 145) 2px;
+/* Requisitos 12 ao 16 */
+
+/* Deixei umas explicaçõesinhas em comentário no html,
+começando no campo da "div id="checkboxs",
+caso as minhas intenções com os códigos abaixo não estejam claras */
+
+#radios {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-.containerB {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    padding: 10px 0;
-    margin-bottom: 15px;
+#checkboxs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-.trybe-family {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
+.check {
+  margin: 0 10px;
 }
 
-.trybe-family label {
-    padding: 5px 0;
+#caixinhas {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.trybe-family label:nth-last-child(4) {
-    text-decoration: underline overline rgb(50, 167, 145) 2px;
+#label-rate {
+  margin-right: 20px;
 }
 
-.trybe-conteudo {
-    display: flex;
-    flex-direction: column;
-    padding: 5px 0;
+#flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
-#label-content {
-    text-decoration: underline overline rgb(50, 167, 145) 2px;
+.rates {
+  margin: 0 5px;
 }
 
-.label-content-options {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+#comentario {
+  display: flex;
+  flex-direction: column;
 }
 
-.label-content-options label {
-    padding: 10px 0;
-    width: 120px;
-}
-
-.containerC {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.avaliador {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-}
-
-.avaliador #label-rate {
-    margin-right: 30px;
-    text-decoration: underline overline rgb(50, 167, 145) 2px;
-}
-
-.avaliador label {
-    margin-right: 15px;
-}
-
-.textarea-box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-
-.textarea-box .textarea {
-    padding: 15px 0;
-    text-decoration: underline overline rgb(50, 167, 145) 2px;
-}
-
-textarea {
-    padding: 8px;
-}
-
-#label-infos {
-    text-decoration: underline overline rgb(50, 167, 145) 2px;
-}
-
-.button-box {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-}
-
-.button-box button {
-    padding: 15px;
-    border: 1px solid #fff;
-    background-color: rgb(50, 167, 145);
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: lowercase;
-}
-
-.button-box button:hover {
-    transition: 1s;
-    background-color: rgb(26, 90, 78);
-}
-
-#trybewarts-forms-logo img {
-    height: 500px;
-}
-
+/* Requisitos 19 */
 footer {
-    background-color: rgb(50, 167, 145);
-    padding: 10px 0;
-    text-align: center;
-    color: #fff;
+
+  /* Configurando a aparência do rodapé */
+  height: 50px;
+  background-color: rgba(48, 48, 48, 0.616);
+
+  /* Configurando o texto do rodapé */
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  white-space: pre-line;
+
+  /* Configurando o comportamento do rodapé */
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
